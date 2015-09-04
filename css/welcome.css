@@ -4,7 +4,7 @@ body {
 
 .welcome {
   text-align: center;
-  margin-top: 26vh;
+  margin-top: 20vh;
 }
 
 .welcome h1 {
@@ -20,4 +20,14 @@ body {
 
 .welcome .dot {
   color: #a71b0f;
+  animation: shrink .5s ease;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(30.0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
