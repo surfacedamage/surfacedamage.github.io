@@ -41,20 +41,20 @@ body.dark-mode .dot {
   color: #a71b0f;
   display: inline-block;
   vertical-align: baseline;
-  animation: roll-in 1.5s ease-out forwards;
+  animation: grow-shrink 0.7s ease-out forwards;
   cursor: pointer;
 }
 
-@keyframes roll-in {
+@keyframes grow-shrink {
   0% {
-    transform: translateX(100vw) rotate(0deg);
+    transform: scale(100);
     opacity: 0;
   }
-  20% {
+  5% {
     opacity: 1;
   }
   100% {
-    transform: translateX(0) rotate(-720deg);
+    transform: scale(1);
     opacity: 1;
   }
 }
