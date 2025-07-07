@@ -4,6 +4,16 @@ body {
   padding: 0;
   height: 100vh;
   overflow: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #f8f8f8;
+}
+
+body.dark-mode .dot {
+  color: #ff6b5b;
 }
 
 .welcome {
@@ -29,4 +39,22 @@ body {
 
 .welcome .dot {
   color: #a71b0f;
+  display: inline-block;
+  vertical-align: baseline;
+  animation: roll-in 1.5s ease-out forwards;
+  cursor: pointer;
+}
+
+@keyframes roll-in {
+  0% {
+    transform: translateX(100vw) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(-720deg);
+    opacity: 1;
+  }
 }
