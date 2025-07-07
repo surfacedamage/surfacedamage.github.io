@@ -5,6 +5,9 @@ body {
 .welcome {
   text-align: center;
   margin-top: 20vh;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .welcome h1 {
