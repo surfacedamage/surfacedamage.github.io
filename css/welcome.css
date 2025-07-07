@@ -16,7 +16,7 @@ body {
   font-weight: bold;
 }
 
-.welcome h4 {
+.welcome .tagline {
   font-size: 4em;
   font-size: 4vw;
 }
